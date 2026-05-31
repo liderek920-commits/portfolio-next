@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+:root {
+  --background: #07090e;
+  --foreground: #e2e8f0;
+  
+  --blueprint-grid: rgba(59, 130, 246, 0.07);
+  --blueprint-glow: rgba(59, 130, 246, 0.15);
+  
+  --font-sans: var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Blueprint Grid Pattern */
+.blueprint-bg {
+  background-color: #06080d;
+  background-image: 
+    linear-gradient(var(--blueprint-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--blueprint-grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  position: relative;
+}
+
+/* Blueprint Grid Major Lines */
+.blueprint-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.03) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.03) 2px, transparent 2px);
+  background-size: 120px 120px;
+  pointer-events: none;
+}
+
+/* Modern Blueprint Vignette */
+.blueprint-radial {
+  background: radial-gradient(circle at 50% 30%, transparent 10%, #030407 90%);
+}
+
+/* Cyberpunk-ish glowing borders */
+.neon-border {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.05), inset 0 0 10px rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.neon-border-glow {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+/* Blinking LED Effect */
+@keyframes led-blink {
+  0%, 100% { opacity: 1; transform: scale(1); filter: brightness(1.2); }
+  50% { opacity: 0.4; transform: scale(0.95); filter: brightness(0.8); }
+}
+
+.led-active {
+  animation: led-blink 2s infinite ease-in-out;
+}
+
+/* Glassmorphism panel styling */
+.glass-panel {
+  background: rgba(10, 15, 30, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Scrollbar to match engineering theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #06080d;
+  border-left: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.4);
+}
+
+/* Precise measurement markings for technical UI */
+.corner-ticks {
+  position: relative;
+}
+
+.corner-ticks::before, .corner-ticks::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-color: rgba(59, 130, 246, 0.4);
+  pointer-events: none;
+}
+
+.corner-ticks::before {
+  top: 4px;
+  left: 4px;
+  border-top: 1.5px solid;
+  border-left: 1.5px solid;
+}
+
+.corner-ticks::after {
+  bottom: 4px;
+  right: 4px;
+  border-bottom: 1.5px solid;
+  border-right: 1.5px solid;
+}
