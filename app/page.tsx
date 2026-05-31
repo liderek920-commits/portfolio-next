@@ -305,11 +305,11 @@ export default function Home() {
                     <div>
                       <div className="flex flex-col gap-6 max-w-md mx-auto">
                         <div
-                          onClick={() => setModalImage({ src: "/Exosuit/images/Exoarm.png", alt: "Exosuit Complete CAD Assembly" })}
+                          onClick={() => setModalImage({ src: "/Exosuit/Images/Exoarm.png", alt: "Exosuit Complete CAD Assembly" })}
                           className="group relative aspect-[4/3] w-full rounded overflow-hidden border border-slate-800 cursor-zoom-in hover:border-blue-500/40 transition-all shadow"
                         >
                           <Image
-                            src="/Exosuit/images/Exoarm.png"
+                            src="/Exosuit/Images/Exoarm.png"
                             alt="Exosuit Complete CAD Assembly"
                             width={500}
                             height={375}
@@ -321,11 +321,11 @@ export default function Home() {
                         </div>
 
                         <div
-                          onClick={() => setModalImage({ src: "/Exosuit/images/Final_Ver.png", alt: "Exosuit Assembly Exploded Drawing Blueprint" })}
+                          onClick={() => setModalImage({ src: "/Exosuit/Images/Final_Ver.png", alt: "Exosuit Assembly Exploded Drawing Blueprint" })}
                           className="group relative aspect-[4/3] w-full rounded overflow-hidden border border-slate-800 cursor-zoom-in hover:border-blue-500/40 transition-all shadow"
                         >
                           <Image
-                            src="/Exosuit/images/Final_Ver.png"
+                            src="/Exosuit/Images/Final_Ver.png"
                             alt="Exosuit Assembly Exploded Drawing Blueprint"
                             width={500}
                             height={375}
@@ -347,11 +347,11 @@ export default function Home() {
                     <div>
                       <div className="flex flex-col gap-6 max-w-md mx-auto">
                         <div
-                          onClick={() => setModalImage({ src: "/Exosuit/images/Custom Ball Bearing Raceway.png", alt: "Custom Bevel Gear & Ball Bearing Raceway" })}
+                          onClick={() => setModalImage({ src: "/Exosuit/Images/Custom Ball Bearing Raceway.png", alt: "Custom Bevel Gear & Ball Bearing Raceway" })}
                           className="group relative aspect-[4/3] w-full rounded overflow-hidden border border-slate-800 cursor-zoom-in hover:border-blue-500/40 transition-all shadow"
                         >
                           <Image
-                            src="/Exosuit/images/Custom Ball Bearing Raceway.png"
+                            src="/Exosuit/Images/Custom Ball Bearing Raceway.png"
                             alt="Custom Bevel Gear & Ball Bearing Raceway"
                             width={500}
                             height={375}
@@ -363,11 +363,11 @@ export default function Home() {
                         </div>
 
                         <div
-                          onClick={() => setModalImage({ src: "/Exosuit/images/Suspended Ball Bearing Assembly.png", alt: "Suspended Dual-Row Slewing Ring Bearing Assembly" })}
+                          onClick={() => setModalImage({ src: "/Exosuit/Images/Suspended Ball Bearing Assembly.png", alt: "Suspended Dual-Row Slewing Ring Bearing Assembly" })}
                           className="group relative aspect-[4/3] w-full rounded overflow-hidden border border-slate-800 cursor-zoom-in hover:border-blue-500/40 transition-all shadow"
                         >
                           <Image
-                            src="/Exosuit/images/Suspended Ball Bearing Assembly.png"
+                            src="/Exosuit/Images/Suspended Ball Bearing Assembly.png"
                             alt="Suspended Dual-Row Slewing Ring Bearing Assembly"
                             width={500}
                             height={375}
@@ -389,7 +389,7 @@ export default function Home() {
                     <div className="flex flex-col items-center">
                       <div className="w-full max-w-[640px] rounded-lg overflow-hidden border border-blue-500/20 bg-black shadow-inner relative flex items-center justify-center p-1.5">
                         <video
-                          src="/Exosuit/Exoarm Demo.mov"
+                          src="/Exosuit/Exoarm Demo.MOV"
                           autoPlay
                           loop
                           muted
@@ -561,7 +561,7 @@ export default function Home() {
                   <span className="text-[9px] text-blue-400 font-bold uppercase block mb-3">// STRUCTURAL BLUEPRINTS VAULT (PDF)</span>
                   <div className="flex flex-col gap-2">
                     <a
-                      href="/Gas Spring Phone Stand/documents/MEP - Gas Spring Final Assembly.pdf"
+                      href="/Gas Spring Phone Stand/Documents/MEP - Gas Spring Final Assembly.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex justify-between items-center text-xs p-2.5 rounded bg-slate-900/50 border border-slate-800 hover:border-blue-500/30 hover:bg-slate-900 transition-all"
@@ -573,7 +573,7 @@ export default function Home() {
                       <span className="text-[9px] text-blue-400 font-bold border border-blue-500/20 px-1.5 py-0.5 rounded bg-blue-500/5">VIEW PACK</span>
                     </a>
                     <a
-                      href="/Gas Spring Phone Stand/documents/MEP - Gas Spring Assembly.pdf"
+                      href="/Gas Spring Phone Stand/Documents/MEP - Gas Spring Assembly.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex justify-between items-center text-xs p-2.5 rounded bg-slate-900/50 border border-slate-800 hover:border-blue-500/30 hover:bg-slate-900 transition-all"
@@ -585,7 +585,7 @@ export default function Home() {
                       <span className="text-[9px] text-blue-400 font-bold border border-blue-500/20 px-1.5 py-0.5 rounded bg-blue-500/5">VIEW DWG</span>
                     </a>
                     <a
-                      href="/Gas Spring Phone Stand/documents/MEP - Desk Clamp Assembly.pdf"
+                      href="/Gas Spring Phone Stand/Documents/MEP - Desk Clamp Assembly.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex justify-between items-center text-xs p-2.5 rounded bg-slate-900/50 border border-slate-800 hover:border-blue-500/30 hover:bg-slate-900 transition-all"
@@ -672,11 +672,11 @@ export default function Home() {
                   {standTab === "assembly" && (
                     <div className="flex flex-col items-center">
                       <div
-                        onClick={() => setModalImage({ src: "/Gas Spring Phone Stand/images/MEP - Gas Spring Assembly.png", alt: "CAD Assembly Drawing Blueprint" })}
+                        onClick={() => setModalImage({ src: "/Gas Spring Phone Stand/Images/MEP - Gas Spring Assembly.png", alt: "CAD Assembly Drawing Blueprint" })}
                         className="group relative w-full rounded overflow-hidden border border-slate-800 cursor-zoom-in hover:border-blue-500/40 transition-all shadow"
                       >
                         <Image
-                          src="/Gas Spring Phone Stand/images/MEP - Gas Spring Assembly.png"
+                          src="/Gas Spring Phone Stand/Images/MEP - Gas Spring Assembly.png"
                           alt="CAD Assembly Drawing Blueprint"
                           width={800}
                           height={600}
@@ -696,11 +696,11 @@ export default function Home() {
                   {standTab === "clamp" && (
                     <div className="flex flex-col items-center">
                       <div
-                        onClick={() => setModalImage({ src: "/Gas Spring Phone Stand/images/Desk Clamp Assembly.png", alt: "CAD Complete System Blueprint" })}
+                        onClick={() => setModalImage({ src: "/Gas Spring Phone Stand/Images/Desk Clamp Assembly.png", alt: "CAD Complete System Blueprint" })}
                         className="group relative w-full rounded overflow-hidden border border-slate-800 cursor-zoom-in hover:border-blue-500/40 transition-all shadow"
                       >
                         <Image
-                          src="/Gas Spring Phone Stand/images/Desk Clamp Assembly.png"
+                          src="/Gas Spring Phone Stand/Images/Desk Clamp Assembly.png"
                           alt="CAD Complete System Blueprint"
                           width={800}
                           height={600}
@@ -720,11 +720,11 @@ export default function Home() {
                   {standTab === "physical" && (
                     <div className="flex flex-col md:flex-row gap-6 items-center">
                       <div
-                        onClick={() => setModalImage({ src: "/Gas Spring Phone Stand/images/Gas Spring Phone Stand.jpg", alt: "Functional Assembly Photo Profile" })}
+                        onClick={() => setModalImage({ src: "/Gas Spring Phone Stand/Images/Gas Spring Phone Stand.jpg", alt: "Functional Assembly Photo Profile" })}
                         className="group relative w-full md:w-1/2 max-w-[280px] rounded overflow-hidden border border-slate-800 cursor-zoom-in hover:border-blue-500/40 transition-all shadow flex items-center justify-center mx-auto"
                       >
                         <Image
-                          src="/Gas Spring Phone Stand/images/Gas Spring Phone Stand.jpg"
+                          src="/Gas Spring Phone Stand/Images/Gas Spring Phone Stand.jpg"
                           alt="Functional Assembly Photo Profile"
                           width={380}
                           height={500}
