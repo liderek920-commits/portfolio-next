@@ -141,7 +141,7 @@ export default function Home() {
         {/* ==========================================================
             SECTION 1: 5-AXIS WEARABLE ARM EXOSUIT
             ========================================================== */}
-        <section className="mb-14">
+        <section id="exosuit" className="mb-14">
 
           {/* Section Header */}
           <div className="flex items-center gap-4 mb-6 border-b border-blue-500/20 pb-3">
@@ -502,7 +502,7 @@ export default function Home() {
         {/* ==========================================================
             SECTION 2: PRODUCT DESIGN - GAS SPRING STAND
             ========================================================== */}
-        <section className="mb-14">
+        <section id="phone-stand" className="mb-14">
 
           {/* Section Header */}
           <div className="flex items-center gap-4 mb-6 border-b border-blue-500/20 pb-3">
